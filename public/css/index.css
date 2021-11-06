@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "interRegular";
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "interMedium";
+  src: url("../fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "interBold";
+  src: url("../fonts/Inter-SemiBold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "interRegular";
+}
+
+.welcome_home__view {
+  background: url("../images/daniel-leone-g30P1zcOzXo-unsplash .jpg") no-repeat;
+  height: 100vh;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.welcome_home__view .navbar_menu_container {
+  width: 100%;
+  display: flex;
+  height: auto;
+  background: transparent;
+  transition: 300ms;
+  padding: 20px 0;
+}
+.welcome_home__view .navbar_menu_container .navbar-brand {
+  font-family: "interBold";
+  font-size: 25px;
+  color: #cdd4ca;
+}
+.welcome_home__view .navbar_menu_container .navbar-nav a {
+  padding: 0px 15px;
+  color: #ffffff;
+  font-family: "interMedium";
+  transition: 300ms;
+}
+.welcome_home__view .navbar_menu_container .navbar-nav a:hover {
+  color: #f2be54;
+  transition: 300ms;
+}
+.welcome_home__view .navbar_menu_container .navbar-nav .active {
+  color: #f2be54;
+}
+.welcome_home__view .sticky {
+  position: fixed;
+  top: 0;
+  background: #ffffff !important;
+  transition: 300ms;
+  z-index: 1000;
+  width: 100%;
+}
+.welcome_home__view .sticky + .welcome_message_container {
+  padding-top: 100px;
+}
+.welcome_home__view .welcome_message_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 80%;
+}
+.welcome_home__view .welcome_message_container .my_eff {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.welcome_home__view .welcome_message_container .latest_offer {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 36px 20px;
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card {
+  width: 60%;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.062745098);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card .card_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 50%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card .card_header h2 {
+  padding-top: 10px;
+  font-size: 40px;
+  color: #ffffff;
+  font-family: "interBold";
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card .card_header p {
+  font-family: "interBold";
+  color: #ffffff;
+  font-size: 16px;
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card .card_body {
+  width: 100%;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card .card_body p {
+  color: #2f3031;
+  font-family: "interBold";
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card .card_body p span {
+  font-family: "interBold";
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card .card_body a {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "interMedium";
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: #f2be54;
+  padding: 6px 35px;
+  border-radius: 4px;
+  transition: 300ms;
+}
+.welcome_home__view .welcome_message_container .latest_offer .offer_card .card_body a:hover {
+  background: #ffad09;
+  transition: 300ms;
+}
+.welcome_home__view .welcome_message_container .welcome_messsage {
+  width: 60%;
+  padding-top: 36px;
+}
+.welcome_home__view .welcome_message_container .welcome_messsage h1 {
+  padding-bottom: 65px;
+  font-size: 85px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-family: "interBold";
+  color: #ffffff;
+}
+.welcome_home__view .welcome_message_container .welcome_messsage a {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "interMedium";
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: #153e5c;
+  padding: 10px 25px;
+  border-radius: 4px;
+  transition: 300ms;
+}
+.welcome_home__view .welcome_message_container .welcome_messsage a:hover {
+  background: #395f7a;
+  transition: 300ms;
+}
+
+.offers__view {
+  background: #395f7a;
+  width: 100%;
+  display: flex;
+  max-height: 800px;
+}
+.offers__view .carousel {
+  width: 100%;
+  height: 100%;
+}
+.offers__view .carousel .carousel-item {
+  width: 100%;
+  height: 800px;
+  min-height: 800px;
+  max-height: 800px;
+}
+.offers__view .carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+.offers__view .carousel .carousel-item .carousel-caption {
+  background: rgba(255, 255, 255, 0.062745098);
+  backdrop-filter: blur(12px);
+  padding-bottom: 35px;
+}
+.offers__view .carousel .carousel-item .carousel-caption h1 {
+  text-transform: capitalize;
+}
+.offers__view .carousel .carousel-item .carousel-caption p {
+  font-size: 16px;
+}
+.offers__view .carousel .carousel-item .carousel-caption .price {
+  color: #f2be54;
+}
+.offers__view .carousel .carousel-item .carousel-caption .book_btn {
+  min-width: 200px;
+  padding: 6px 65px;
+  background: #f2be54;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: #153e5c;
+  border-radius: 4px;
+  transition: 300ms;
+}
+.offers__view .carousel .carousel-item .carousel-caption .book_btn:hover {
+  background: #ffad09;
+  transition: 300ms;
+}
+.offers__view .carousel-control-prev, .offers__view .carousel-control-next {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*# sourceMappingURL=index.css.map */
